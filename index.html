@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <html lang="pt-BR">
+
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
@@ -10,17 +11,52 @@
             <link rel="manifest" href="/site.webmanifest"> 
             <title>Site pessoal - Lucas</title>
         </head>
+
         <body>
            <div class="container">
+
+               <div class="buttonMenu">
+                   <div class="line" id="line1"></div>
+                   <div class="line" id="line2"></div>
+                   <div class="line" id="line3"></div>
+                </div>
+
                <header>
                    <div class="img-wrapper">
-                       <img src="images/bg.jpg" alt="">
+                       <img src="images/bg.jpg" alt="Monitores com linhas de código">
                    </div>
                    <div class="banner">
                        <h1>Bem vindo ao meu site pessoal!</h1>
                        <p>Desenvolvido por Lucas Smaniotto Schuch</p>
                    </div>
-               </header>
+                </header>
+
+                <aside class="sidebar">
+                    <nav>
+                      <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Sobre mim</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Redes Sociais</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                      </ul>
+                    </nav>
+                    <div class="social-media">
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
            </div>
+
         </body>
+
+        <script>
+            var buttonMenu = document.querySelector(".buttonMenu");
+            
+            buttonMenu.addEventListener("click", function(){
+                document.querySelector(".container").classList.toggle("show-menu");
+            });
+        </script>
+
     </html>
