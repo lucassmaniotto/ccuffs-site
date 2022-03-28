@@ -9,18 +9,13 @@ Direitos autorais do Backgroud:
 
 - Autor: Fotis Fotopoulos , Unsplash
 - Disponível em: https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-
-Inspiração para o design da página:
-
-Autor: João Carlos Lima e Silva
-Modelo disponível em: https://www.youtube.com/channel/UCStdvHzCL5n76P7WJqGBGzA
   
 Icones importados de:
 
 - Autor: Font Awesome
 - Disponível em: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css
 
-Fontes importadas de:
+Direitos autorais da fonte dos textos:
 
 - Josefin Sans
 - Mulish

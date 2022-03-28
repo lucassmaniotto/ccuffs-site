@@ -5,58 +5,55 @@
             <meta charset="utf-8">
             <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
             <link rel="stylesheet" href="styles/style.css">
-            <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-            <link rel="manifest" href="/site.webmanifest"> 
             <title>Site pessoal - Lucas</title>
         </head>
 
         <body>
            <div class="container">
-
-               <div class="buttonMenu">
-                   <div class="line" id="line1"></div>
-                   <div class="line" id="line2"></div>
-                   <div class="line" id="line3"></div>
-                </div>
-
                <header>
-                   <div class="img-wrapper">
-                       <img src="images/bg.jpg" alt="Monitores com linhas de código">
-                   </div>
-                   <div class="banner">
-                       <h1>Bem vindo ao meu site pessoal!</h1>
-                       <p>Desenvolvido por Lucas Smaniotto Schuch</p>
+                   <aside class="sidebar">
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Sobre mim</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Redes Sociais</a></li>
+                                <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                                <li class="menu-item"><a href="https://github.com/lucassmaniotto/" class="menu-social"><i class="fab fa-github"></i></a></li>
+                                <li class="menu-item"><a href="https://www.instagram.com/alpiste_punk/" class="menu-social"><i class="fab fa-instagram"></i></a></li>
+                                <li class="menu-item"><a href="https://twitter.com/alpiste_punk/" class="menu-social"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </nav>
+                   </aside>
+                    <div class="img-wrapper">
+                        <img src="images/bg.jpg" alt="Monitores com linhas de código">
+                    </div>
+                    <div class="img-content">
+                        <h1>Bem vindo ao meu site pessoal!</h1>
+                        <p>Desenvolvido por Lucas Smaniotto Schuch</p>
                    </div>
                 </header>
-
-                <aside class="sidebar">
-                    <nav>
-                      <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Sobre mim</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Redes Sociais</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                      </ul>
-                    </nav>
-                    <div class="social-media">
-                      <a href="#"><i class="fab fa-github"></i></a>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    
+                <section class="section-sobre-mim">
+                    <div class="section-header">
+                        <h1>Sobre mim</h1>
                     </div>
-                </div>
-           </div>
+                    <div class="sobre-mim">
+                        <div class="img-wrapper-sobre-mim"></div>
+                            <img src="images/lucassmaniotto.jpg" alt="Desenvolvedor do Site">
+                        </div>
+                        <div class="sobre-mim-text">
+                            <p>Sou um estudante de graduação em 
+                                <a href="https://cc.uffs.edu.br/">Ciência da Computação</a> na 
+                                <a href="https://www.uffs.edu.br/">Universidade Federal da Fronteira Sul (UFFS)</a> desde novembro de 2021.
+                                <p><br>Desde que me conheço por gente fui sempre muito interessado em tecnologia. Quando era criança sempre gostava de abrir computadores velhos em minha casa, estudar as peças e componentes e sempre ficava fascinado como essa máquina funcionava (além de amar jogar jogos e instalar programas diversos).<br>Durante meu ensino médio eu tive oportunidade de ingressar em um cursinho de Robótica, onde entrei de cabeça em noções de elétrica, mecânica e principalmente o que me apaixonei, a programação. Usavamos noções de Arduino, Raspberry, Lego Mindstorms para participar de competições que a escola oferecia. Nossa equipe da época competiu na PUC/RS em competiçõesde Desafio de Drones, conquistando 1° lugar nas categorias Educação Básica em 2016 e Maker em 2017. No mesmo ano também participamos no Incubando Ideias, conquistando 3° lugar como Best Application no Festival Marista de Robótica 2017, ondeusamos Arduino e conhecimentos de Web Development para criarmos um site de Meteorologia (o projeto está inativo atualmente).<br>Hoje sigo no curso de Ciência da Computação da UFFS e também curso na Escola de Programação da Alura para me aperfeiçoar ainda mais. Me considero entusiasta na área da tecnologia da informação, sempre buscando aperfeiçoamento e estudo em áreas da Computação. Tenho sonho de me tornar um Programador Full-Stack e tenho muito interesse em Front-End, Back-End e além ter muita curiosidade em assuntos como Inteligência Artificial. Além de tecnologia, tenho paixão por música e pretendo estudar essa arte em Music Generation relacionada a Machine Learning.</p>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
         </body>
-
-        <script>
-            var buttonMenu = document.querySelector(".buttonMenu");
-            
-            buttonMenu.addEventListener("click", function(){
-                document.querySelector(".container").classList.toggle("show-menu");
-            });
-        </script>
-
     </html>
