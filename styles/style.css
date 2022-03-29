@@ -19,17 +19,33 @@ header{
 
 .menu{
     position: fixed;
-    display: flex;
     top: 1.15rem;
-    justify-content: space-between;
-    margin: auto 30px;
     z-index: 100;
-    animation: moverHeaderMenu 3.5s;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.menu-item{
+.menu-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.menu-social {
+    display: flex;
+    padding-right: 20%;
+}
+
+.icone-social{
     margin: 0 15px;
+    color: rgb(205, 200, 200);
     text-shadow: 0.1rem 0.1rem 1px black;
+}
+
+.icone-social:hover{
+    color: rgb(109, 22, 22);   
 }
 
 .menu-link{
@@ -41,17 +57,6 @@ header{
 
 .menu-link:hover{
     color: rgb(109, 22, 22);
-}
-
-.menu-social{
-    margin-left: 50rem;
-    position: absolute;
-    justify-content: space-evenly;
-    color: rgb(205, 200, 200)
-}
-
-.menu-social:hover{
-    color: rgb(109, 22, 22);   
 }
 
 @keyframes moverHeaderMenu {
@@ -136,10 +141,26 @@ section h1{
     color: #fff;
 }
 
+section h3{
+    font-size: 1rem;
+    font-family: "Mulish", serif;
+    font-weight: 200;
+    color: #fff;
+}
+
 section p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: "Mulish", serif;
     color: #fff;
+}
+
+section i{
+    color: #fff;
+    cursor: pointer;
+}
+
+section i:hover{
+    color:rgb(109, 22, 22);
 }
 
 section a{
@@ -148,8 +169,44 @@ section a{
 
 .section-header{
     padding: 5rem;
+    padding-bottom: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.section-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-mim {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.sobre-mim img {
+    max-width: 2400px;
+    max-height: 650px;
+    margin-left: 7.5%;
+    padding: 0;
+}
+
+.sobre-mim-text{ 
+    width: 45%;
+    margin-right: 7.5%;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 1.5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 5rem;
+}
